@@ -93,13 +93,9 @@ Rails.application.configure do
 
   # Google cloud storage
   config.paperclip_defaults = {
-    :provider                         => 'Google',
-    :storage                          => :fog,
-    :fog_credentials => {
-      :bucket: => pinteresting,
-      :google_storage_access_key_id   => GOOGE3QGBKWQWNZYQIAN,
-      :google_storage_secret_access_key => bt1FgWVYpFOHGd12Yksrb3yxhTqjKU6zLWGjntsh
-    }
+    provider: Google
+    google_storage_access_key_id: GOOGE3QGBKWQWNZYQIAN
+    google_storage_secret_access_key: bt1FgWVYpFOHGd12Yksrb3yxhTqjKU6zLWGjntsh
   }
 
 end
